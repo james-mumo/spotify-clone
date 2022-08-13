@@ -9,6 +9,7 @@ export const DataLayerContext = createContext();
 // the first two props are the one that are passed in the arguments while the children prop is what is being wrapped by the data layer itself
 export const DataLayer = ({ initialState, reducer, children }) => {
   //
+//   
   // the datalayercontext then uses the ,Provider and then the value of the DataLayerContext is passed in a useReducer with the reducer and initails State
   <DataLayerContext.Provider value={useReducer(reducer, initialState)}>
     {/* in here we wrap whatever the child will be given */}
